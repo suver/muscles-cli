@@ -1,0 +1,29 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry]
+name = "muscles-cli"
+version = "0.0.2"
+description = ""
+authors = ["Denis B. <denis@butko.info>"]
+packages = [{include = "muscles", from = "src", to = "muscles.cli"}]
+
+
+[tool.poetry.dependencies]
+python = "^3.9"
+#muscles = {develop = true, version = "^0.0.2", path = "../muscles"}
+watchdog = "^4.0.0"
+dnspython = "==2.6.1"
+pyyaml = "~=6.0.0"
+werkzeug = "==2.1.1"
+pytest = "==7.1.3"
+setuptools = "==69.0.2"
+greenlet = "==3.0.2"
+jsonschema = "==4.16.0"
+
+
+[tool.poetry.dev-dependencies]
+# Зависимости для разработки
+
